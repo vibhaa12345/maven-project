@@ -1,0 +1,115 @@
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin$ git --version
+git version 2.43.0
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin$ git config --global user.name "1mp22is051@bgscet.ac.in"
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin$ git config --list
+user.name=1mp22is051@bgscet.ac.in
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin$ ssh-keygen -t rsa -b 4096 -C "1mp22is051@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/shreevibhas/.ssh/id_rsa):
+/home/shreevibhas/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/shreevibhas/.ssh/id_rsa
+Your public key has been saved in /home/shreevibhas/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:bvuvfM5kNeu2keCmsYin+Mqx70vmZ1YDxcvvmfpNqXU 1mp22is051@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|         .       |
+|          o      |
+|         o .     |
+|        . o      |
+|        S. .. o  |
+|       .  o..o = |
+|    . o o..o=oB E|
+|   . B o=+ O=*.o |
+|    ==OBo.BB*.+. |
++----[SHA256]-----+
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin$ eval "$(ssh-agent -s)"
+Agent pid 461
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin$ ssh-add ~/.ssh/id_rsa
+Identity added: /home/shreevibhas/.ssh/id_rsa (1mp22is051@gmail.com)
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDtQB6pkKyrb8XgEq5ajzcghC2eC2mpgBKjKrLsTy0z9jyv6WJihOTYOLjH58FgKw/lQ1r4/WF2USRKBKfDERFg7f45/J6USxcWLJrB78utA/A9xodNGrdU4Xw32wJz/kbB6ZxWPnPmLct5+hhPDtmNqTMelrgss1mAhmyDpy1Rmk5RvLKuZcxyQdIfuR9NX5aqPFxNTEvyjJku+f0m2mQvBCkk9DQNvTi1ZkXe2aEdy3+9dzg6OmlpptPt77sbcLVP6/oJutPVfFZUqXOs6uGkZEnEh/CgpKL7wLSGovG7GxEysGLYxW8gAuT3CJ87rTxHmVexbbrpgXEmHdPdOH5bPByqqYBHZDjMNQz3CE7M/tBtL9+aWeNsICt8rGRiHIQ2J8SqMe/4vIq75c1vLTaF01rGEZRICe+SW70Arq52ttoucYJR6nxne7Hp96dpwvh3Ks1/Xyimey54fDPL5+9KN+7eJEQVVuO3Y/+ge1VPgK09XGfC/53yCIe4nQWrTS/xY6Q5kQpPo3TICCbPv/GtSK0RP+DDkvYx3zTN4c8Io3y4h0pz9qNREr9lSoTRYcj6IPhlyxDuFBugPCgkRMzTiFZ+AebmqzNuqwL5BRKQTil4uFI0EzLgtAtch6P8AykXKO3mDyK3C3ZkMbOZbphFGasyAYuj8UUJdSe53e6JGQ== 1mp22is051@gmail.com
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin$ ssh -T git@github.com
+Hi vibhaa12345! You've successfully authenticated, but GitHub does not provide shell access.
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin$ git clone git@github.com:vibhaa12345/devops.git
+Cloning into 'devops'...
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin$ git clone git@github.com:YourUsername/maven-project.git
+fatal: destination path 'maven-project' already exists and is not an empty directory.
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin$ git clone git@github.com:vibhaa12345/maven-proje
+ct.git
+fatal: destination path 'maven-project' already exists and is not an empty directory.
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin$ git clone git@github.com:vibhaa12345/maven-Devops.git
+Cloning into 'maven-Devops'...
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin$ git clone git@github.com:vibhaa12345/Devops.git
+Cloning into 'Devops'...
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin$ git clone git@github.com:vibhaa12345/git-demo.gi
+t
+Cloning into 'git-demo'...
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin$ git clone git@github.com:vibhaa12345/maven-project.git
+fatal: destination path 'maven-project' already exists and is not an empty directory.
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin$ cd Documents/GitHub/maven-project
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin/Documents/GitHub/maven-project$ git clone git@github.com:vibhaa12345/maven-project.git
+Cloning into 'maven-project'...
+remote: Enumerating objects: 43, done.
+remote: Counting objects: 100% (43/43), done.
+remote: Compressing objects: 100% (21/21), done.
+remote: Total 43 (delta 1), reused 42 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (43/43), 7.22 KiB | 527.00 KiB/s, done.
+Resolving deltas: 100% (1/1), done.
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin/Documents/GitHub/maven-project$ cd maven-project
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin/Documents/GitHub/maven-project/maven-project$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin/Documents/GitHub/maven-project/maven-project$ git
+ add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin/Documents/GitHub/maven-project/maven-project$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin/Documents/GitHub/maven-project/maven-project$ git
+ add.
+git: 'add.' is not a git command. See 'git --help'.
+
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin/Documents/GitHub/maven-project/maven-project$
+        add
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin/Documents/GitHub/maven-project/maven-project$ git
+ add.all
+git: 'add.all' is not a git command. See 'git --help'.
+shreevibhas@DESKTOP-MG7BQ1E:/mnt/c/Users/admin/Documents/GitHub/maven-project/maven-project$ git
+ --add
+unknown option: --add
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
